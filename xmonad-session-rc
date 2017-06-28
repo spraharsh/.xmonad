@@ -1,0 +1,43 @@
+#!/bin/sh
+# Script to configure X, start common apps, and start xmonad.
+# Author: Praharsh
+
+
+
+# Configure PATH so that we can access our scripts below
+PATH=$PATH:~/.cabal/bin:~/.xmonad/bin
+
+# Configure X
+xsetroot -cursor_name left_ptr &
+xrdb -merge ~/.Xdefaults &
+setxkbmap -option "ctrl:nocaps" &
+
+# Start a window compositor. This ensures Google Chrome paints correctly.
+xcompmgr -n &
+
+# Start the system tray
+tray &
+
+# Start emacs
+emacs ~/todo.org &
+
+# Start a browser
+
+# sync mail offline immediately
+offlineimap &
+
+# capture work details through arbtt-capture
+arbtt-capture &
+
+# Start screensaver
+gnome-screensaver &
+
+# Start sound server
+pulseaudio --start --log-target=syslog &
+
+# gnome stuff 
+gnome-session &
+# background
+feh --bg-fill /home/praharsh/Pictures/solarizedbackground.jpeg &
+# dropbox start
+dropbox start -i &
