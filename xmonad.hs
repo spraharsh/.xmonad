@@ -1,6 +1,4 @@
--- xmonad config used by Vic Fryzel
--- Author: Vic Fryzel
--- http://github.com/vicfryzel/xmonad-config
+-- xmonad config largely imported from Vic Fryzel
 
 import System.IO
 import System.Exit

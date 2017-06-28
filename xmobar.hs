@@ -1,8 +1,4 @@
--- xmobar config used by Vic Fryzel
--- Author: Vic Fryzel
--- http://github.com/vicfryzel/xmonad-config
-
--- This is setup for dual 1920x1080 monitors, with the right monitor as primary
+-- xmobar config which was originally Vic Fryzel's
 
 Config { font = "xft:inconsolatalgc:pixelsize=10:antialias=true",
          overrideRedirect = False,
