@@ -6,5 +6,11 @@ My personal xmonad configuration built on top of [Vic Fryzel's](https://github.c
 ## screenshots
 
 
+![screenshot of the desktop](https://github.com/spraharsh/.xmonad/blob/master/screenshots/2017-06-29-000211_1366x768.png)
+
+with emacs, code running on a terminal and cmus
+
+![screenshot](https://github.com/spraharsh/.xmonad/blob/master/screenshots/2017-06-29-004647_1366x768.png)
+
 
 
