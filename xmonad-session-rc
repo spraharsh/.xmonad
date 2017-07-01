@@ -19,7 +19,7 @@ xcompmgr -n &
 tray &
 
 # Start emacs
-emacs ~/todo.org &
+emacs &
 
 # Start a browser
 

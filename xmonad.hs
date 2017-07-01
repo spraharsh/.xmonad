@@ -48,10 +48,10 @@ myLauncher = "$(yeganesh -x -- -fn '-*-terminus-*-r-normal-*-*-120-*-*-*-*-iso88
 -- Workspaces
 -- The default number of workspaces (virtual screens) and their names.
 --
-myWorkspaces = ["1:org-agenda","2:work/editor", "3:web","4:music", "5:scratch", "6:scratch","7:scratch","8:scratch", "9:dump"]
+myWorkspaces = ["1:editor","2:web", "3:music","4:scratch", "5:scratch", "6:scratch","7:scratch","8:scratch", "9:dump"]
 
 
-------------------------------------------------------------------------
+               ------------------------------------------------------------------------
 -- Window rules
 -- Execute arbitrary actions and WindowSet manipulations when managing
 -- a new window. You can use this to, for example, always float a
@@ -64,9 +64,9 @@ myWorkspaces = ["1:org-agenda","2:work/editor", "3:web","4:music", "5:scratch", 
 --
 -- To match on the WM_NAME, you can use 'title' in the same way that
 -- 'className' and 'resource' are used below.
---
+               --
 myManageHook = composeAll
-    [ className =? "google-chrome"  --> doShift "3:web"
+  [ className =? "google-chrome"  --> doShift "2:web"
     , resource  =? "desktop_window" --> doIgnore
     , className =? "Galculator"     --> doFloat
     , className =? "Steam"          --> doFloat

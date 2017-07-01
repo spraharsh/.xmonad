@@ -1,4 +1,4 @@
--- xmobar config which was originally Vic Fryzel's
+--- xmobar config which was originally Vic Fryzel's
 
 Config { font = "xft:inconsolatalgc:pixelsize=10:antialias=true",
          overrideRedirect = False,
